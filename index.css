@@ -100,9 +100,11 @@ section{
     margin-bottom: 25px;
 }
 .players img{
+    box-shadow:  8px 6px 6px rgba(238, 237, 237, 0.596) ;
     margin-right: 10px;
     height: 58px;
     width: 58px;
+    border-radius: 100%;
 }
 
 /* ========blogs========== */
@@ -125,7 +127,7 @@ article{
     color: rgb(37, 37, 37);
     padding-left: 5px;
     padding-top: 12px;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 38px;
     font-weight: 600;
 }
@@ -142,8 +144,8 @@ article img{
 
 
 
-/* =======footer start====== */
-footer{
+/* =======course start====== */
+.course-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,19 +163,28 @@ footer{
 }
 .courses{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,32%);
     padding-top: 10px;
 }
 .box{
     margin-top: 10px;
-    margin-left: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    box-shadow: 8px 6px 6px rgba(238, 237, 237, 0.534);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    border-radius: 10px;
+
 }
 .box-img>img{
     height: 104px;
-    width: 220px;
+    width: 210px;
 }
 .box-detail{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 }
 .box-detail span{
@@ -197,6 +208,110 @@ footer{
     color: orangered;
 }
 
+/* ==========footer======== */
+
+footer{
+    display: flex;
+    height: fit-content;
+    width: 100%;
+}
+.contact{
+    flex: 1;
+    color: white;
+    background-color: rgb(121, 118, 118);
+    text-align: center;
+}
+.contact form{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+    
+    width: 80%;
+    background-color: rgb(121, 118, 118);
+    
+}
+.contact form>input, textarea{
+    border: solid white;
+    color: white;
+    background-color: rgb(121, 118, 118);
+}
+.contact button{
+    background-color: rgb(121, 118, 118);
+    color: white;
+    font-weight: 700;
+    height: 30px;
+    width: 250px;
+    margin: 5px;
+    border: solid white;
+}
+
+.address{
+    flex: 1;
+    background-color: crimson;
+    display: flex;
+    padding: 10px;
+    padding-top: 4%;
+    justify-content: space-around;
+}
+
+.address .pop-in{
+font-size: 18px;
+font-weight: 700;
+line-height: 48px;
+color: white;
+}
+
+.address .pop-in span{
+    font-size: 34px;
+    font-weight: 700;
+    color: orange;
+    margin-bottom: 20px;
+    }
+
+    .address .say-hello{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 48px;
+        color: white;
+        }
+    
+    .address .say-hello span{
+    
+        font-size: 34px;
+        font-weight: 700;
+        color: orange;
+        margin-bottom: 20px;
+        }        
+    
+    .address .say-hello>ul  {
+        list-style: none;
+        display: flex;
+    
+
+    }
+
+    .say-hello ul li{
+        position: relative;
+        left: -50px;
+        padding: 10px;
+        font-size: 32px;
+
+    }
+
+    .fab,.fas{
+        color: white;
+    }
+
+    .cradit{
+        background-color: rgb(138, 2, 29);
+        height: 35px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-weight: 500;
+    }
 
 
 /* ====
@@ -207,8 +322,14 @@ footer{
 
 @media only screen and (max-width: 600px)
 
-{
-
+{  
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+    }
+    
     .navbar{
         margin-top: 0;
         padding: 8px;
@@ -284,27 +405,29 @@ footer{
     margin-top: 5px;
     
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     
 }
   
 .players{
     display: flex;
+    flex-direction: column;
     padding: 4px;
     align-items: center;
-    font-size: .5em;
+    color:goldenrod;
+    font-size: 1.2em;
    
     margin-bottom: 8px;
 }
 .players img{
     margin-right: 8px;
-    height: 38px;
-    width: 38px;
+    height: 78px;
+    width: 78px;
 }
 .title{
     color:#562EFF;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 5px;
     margin-top: 10px;
@@ -367,6 +490,19 @@ article img{
     
 }
 
+.address .pop-in,.address .say-hello{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+    color: white;
+    }
+
+.fab{
+    font-size: 18px;
+}
+
+
+
 }
 
 
@@ -378,7 +514,15 @@ article img{
 
 @media only screen and (min-width: 601px) and (max-width: 998px)
 
-{
+{   
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+    }
 
     .navbar{
         margin-top: 0;
