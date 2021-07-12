@@ -12,13 +12,14 @@ body{
     margin-top: 20px;
     height: 94px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: blue;
+    flex-wrap: wrap;
 }
 
 #navitem a{
-    margin-right: 20%;
+    margin: 20px;
     text-decoration: none;
     color: white;
 }
@@ -50,7 +51,7 @@ body{
     display: flex;
     color: white;
     align-items: center;
-   
+     
 }
 #logo>img{
    
@@ -63,6 +64,7 @@ body{
 /*======main start======*/
 main{
     display: flex;
+
     justify-content: center;
 }
 section{
@@ -192,4 +194,175 @@ footer{
     
     font-size: 10px;
     color: orangered;
+}
+
+
+
+/* ====
+=========
+ APPLY MEDIA FOR 600PX SCREEN 
+=========
+===== */
+
+@media only screen and (max-width: 600px)
+
+{
+
+    .navbar{
+        margin-top: 0;
+        padding: 8px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: blue;
+      
+    }
+    
+    #navitem a{
+        margin: 20px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    #navitem a:visited{
+        text-decoration: none;
+        color: white;
+    }
+    #navitem{
+        
+     
+        padding: 5px;
+        display: flex;
+        width: fit-content;
+        align-items: center;
+    
+    }
+    
+    
+    #navitem img{
+        
+        width: 51px;
+        height: 51px;
+    }
+    
+    
+    #logo{
+        
+        display: flex;
+        color: white;
+        align-items: center;
+         
+    }
+    #logo>img{
+       
+        margin-right: 25px;
+        width: 40.42px;
+        height: 51px;
+    }
+
+    main{
+        display: flex;
+    
+       align-items: center;
+    }
+
+    section{
+        padding: 20px;
+        padding-top: 10px;
+        margin-top: 8px;
+        background-color: rgb(255, 255, 255);
+        height: fit-content;
+        width: 100%;
+        border-radius: 8px;
+        
+    }
+   
+.top-player{
+    margin-top: 5px;
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+  
+.players{
+    display: flex;
+    padding: 4px;
+    align-items: center;
+    font-size: .5em;
+   
+    margin-bottom: 8px;
+}
+.players img{
+    margin-right: 8px;
+    height: 38px;
+    width: 38px;
+}
+.title{
+    color:#562EFF;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.top-blog{
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 15px;
+}
+
+
+article{
+   display: flex;
+   
+
+}
+
+.article-detail{
+    color: rgb(37, 37, 37);
+    padding-left: 3px;
+    padding-top: 8px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.article-detail span{
+    line-height: 22px;
+    font-size: 8px;
+    color: rgb(114, 113, 114);
+}
+article img{
+    height: 90px;
+    width: 110px;
+}
+
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding-top: 10px;
+}
+
+
+.course-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin-top: 8px;
+    padding-top: 20px;
+    
+    width:100%;
+    background-color: white;
+    border-radius: 8px;
+    padding-top: 5px;
+    
+}
+
 }
