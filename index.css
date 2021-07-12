@@ -264,13 +264,14 @@ color: white;
 }
 
 .address .pop-in span{
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 700;
     color: orange;
     margin-bottom: 20px;
     }
 
     .address .say-hello{
+        margin-left: 15px;
         font-size: 18px;
         font-weight: 700;
         line-height: 48px;
@@ -279,7 +280,7 @@ color: white;
     
     .address .say-hello span{
     
-        font-size: 34px;
+        font-size: 32px;
         font-weight: 700;
         color: orange;
         margin-bottom: 20px;
@@ -296,6 +297,7 @@ color: white;
         position: relative;
         left: -50px;
         padding: 10px;
+        padding-top: 1px;
         font-size: 32px;
 
     }
