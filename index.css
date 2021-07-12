@@ -271,7 +271,7 @@ color: white;
     }
 
     .address .say-hello{
-        margin-left: 15px;
+        margin-left: 15git px;
         font-size: 18px;
         font-weight: 700;
         line-height: 48px;
@@ -599,7 +599,7 @@ article img{
    
 .top-player{
     margin-top: 5px;
-    
+    margin-left: 105px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     
@@ -610,13 +610,13 @@ article img{
     padding: 4px;
     align-items: center;
     font-size: 1em;
-   
+    
     margin-bottom: 8px;
 }
 .players img{
     margin-right: 8px;
-    height: 48px;
-    width: 48px;
+    height: 54px;
+    width: 54px;
 }
 .title{
     color:#562EFF;
