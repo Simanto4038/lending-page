@@ -241,6 +241,7 @@ footer{
     
     
     #navitem img{
+        display: none;
         
         width: 51px;
         height: 51px;
