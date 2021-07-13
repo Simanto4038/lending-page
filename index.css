@@ -35,6 +35,8 @@ body{
     display: flex;
     width: fit-content;
     align-items: center;
+    position: relative;
+    left: -200px;
 
 }
 
@@ -51,6 +53,8 @@ body{
     display: flex;
     color: white;
     align-items: center;
+    position: relative;
+    left: 200px;
      
 }
 #logo>img{
@@ -360,6 +364,7 @@ color: white;
         display: flex;
         width: fit-content;
         align-items: center;
+        position: static;
     
     }
     
@@ -377,6 +382,7 @@ color: white;
         display: flex;
         color: white;
         align-items: center;
+        position: static;
          
     }
     #logo>img{
@@ -562,7 +568,7 @@ article img{
         display: flex;
         width: fit-content;
         align-items: center;
-    
+        position: static;
     }
     
     
@@ -579,6 +585,8 @@ article img{
         display: flex;
         color: white;
         align-items: center;
+        position: relative;
+        left: 0px;
          
     }
     #logo>img{
@@ -628,11 +636,12 @@ article img{
 }
 .title{
     color:#562EFF;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 15px;
     margin-top: 10px;
+    margin-left: -5px;
 }
 
 .top-blog{
