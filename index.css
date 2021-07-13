@@ -242,7 +242,7 @@ footer{
     color: white;
     font-weight: 700;
     height: 30px;
-    width: 250px;
+    width: 60%;
     margin: 5px;
     border: solid white;
 }
@@ -302,7 +302,7 @@ color: white;
 
     }
 
-    .fab,.fas{
+    .address .fab,.address .fas{
         color: white;
     }
 
@@ -427,17 +427,21 @@ color: white;
     width: 78px;
 }
 .title{
-    color:#562EFF;
-    font-size: 20px;
-    font-weight: 700;
+    color:#2e82ff;
+    font-size: 22px;
+    font-weight: 800;
     text-align: center;
     margin-bottom: 5px;
     margin-top: 10px;
+    position: relative;
+    left: -10px;
 }
 
 .top-blog{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     padding-top: 15px;
 }
@@ -445,7 +449,10 @@ color: white;
 
 article{
    display: flex;
-   
+   flex-direction: column;
+   align-items: center;
+box-shadow: 5px 4px 15px rgba(196, 192, 192, 0.671);
+ border-radius: 10px;
 
 }
 
@@ -453,19 +460,20 @@ article{
     color: rgb(37, 37, 37);
     padding-left: 3px;
     padding-top: 8px;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 22px;
-    font-weight: 500;
+    font-weight: 600;
+    text-align: center;
 }
 
 .article-detail span{
     line-height: 22px;
-    font-size: 8px;
+    font-size: 12px;
     color: rgb(114, 113, 114);
 }
 article img{
-    height: 90px;
-    width: 110px;
+    height: 130px;
+    width: 190px;
 }
 
 
